@@ -38,52 +38,7 @@
     </main>
 
     <footer>
-      <div>
-        <section>
-          <h3>Learn</h3>
-          <nav>
-            <ul>
-              {{ range .Site.Menus.learn }}
-                <li><a id="{{ .Identifier }}" href="{{ .URL }}">{{ .Name }}</a></li>
-              {{ end }}
-            </ul>
-          </nav>
-        </section>
-        <section>
-          <h3>Contribute</h3>
-          <nav>
-            <ul>
-              {{ range .Site.Menus.contrib }}
-                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-              {{ end }}
-            </ul>
-          </nav>
-        </section>
-        <section>
-          <h3>Legal</h3>
-          <nav>
-            <ul>
-              {{ range .Site.Menus.legal }}
-                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-              {{ end }}
-            </ul>
-          </nav>
-        </section>
-        <section>
-          <h3>About</h3>
-          <nav>
-            <ul>
-              {{ range .Site.Menus.about }}
-                <li><a id="{{ .Identifier }}" href="{{ .URL }}">{{ .Name }}</a></li>
-              {{ end }}
-            </ul>
-          </nav>
-        </section>
-      </div>
-      <p>&copy; {{ .Site.Copyright }}</p>
+      <p>&copy; I dont own the copywrite of the UI</p>
     </footer>
-    <script>
-      document.getElementById("dynamic").setAttribute("href", "mail" + decodeURIComponent("to" + ":" + "chrispalmeri" + "%40%67%6d%61%69") + "l.com");
-    </script>
   </body>
 </html>

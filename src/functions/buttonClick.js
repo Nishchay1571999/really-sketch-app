@@ -1,7 +1,7 @@
 // functions/buttonClick.js
 
 import tool from './../tool.js';
-import { Line, Arc, Text, Eraser } from './../actions/index.js';
+import { Line, Arc, Text, Eraser, Circle, Arrow, Rectangle, Triangle } from './../actions/index.js';
 import drawing from './../drawing.js';
 
 window.addEventListener("load", function() {
@@ -17,6 +17,18 @@ export default function buttonClick(e) {
   var youClicked = {
     "line-button": function() {
       tool.change(new Line());
+    },
+    "circle-button":function(){
+      tool.change(new Circle())
+    },
+    "arrow-button":function(){
+      tool.change(new Arrow())
+    },
+    "rectangle-button":function(){
+      tool.change(new Rectangle())
+    },
+    "triangle-button":function(){
+      tool.change(new Triangle())
     },
     "arc-button": function() {
       tool.change(new Arc());

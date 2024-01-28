@@ -7,23 +7,23 @@
     "serve": "npm-run-all -p serve:*",
     "serve:rollup": "rollup -c -w",
     "serve:hugo": "hugo server -ws site",
+    "electron":"electron .",
     "build": "npm-run-all -s build:*",
     "build:rollup": "rollup -c",
     "build:hugo": "hugo -s site -d ../dist",
     "lint": "jshint src/",
-    "clean": "js-beautify -r src/*/*.js src/*.js",
-    "electron":"electron ."
+    "clean": "js-beautify -r src/*/*.js src/*.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chrispalmeri/really-sketch.git"
+    "url": "git+https://github.com/Nishchay1571999/really-sketch-app.git"
   },
   "author": "Chris Palmeri",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chrispalmeri/really-sketch/issues"
+    "url": "https://github.com/Nishchay1571999/really-sketch-app/issues"
   },
-  "homepage": "https://github.com/chrispalmeri/really-sketch#readme",
+  "homepage": "https://github.com/Nishchay1571999/really-sketch-app#readme",
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
